@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #fff8f0;
+    color: #333;
+}
+
+/* Navigation */
+
+nav {
+    background-color: #2d6a4f;
+    padding: 20px;
+    text-align: center;
+}
+
+nav h2 {
+    color: white;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+
+/* Home */
+
+.home {
+    background-color: #f4a261;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.home h1 {
+    font-size: 45px;
+    color: white;
+}
+
+.home p {
+    font-size: 20px;
+}
+
+.home img {
+    width: 400px;
+    border-radius: 20px;
+}
+
+button {
+    background-color: #2d6a4f;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 20px;
+}
+
+
+/* Menu */
+
+#menu {
+    padding: 50px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    width: 250px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card strong {
+    color: #e76f51;
+}
+
+
+/* About */
+
+.about {
+    background-color: #2d6a4f;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
