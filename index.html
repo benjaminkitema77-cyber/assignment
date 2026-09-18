@@ -1,102 +1,410 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Tasty Bites</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NOIR — Modern Dining</title>
+
     <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <h2><b>Tasty Bites 🍔</b></h2>
+    <!-- NAVIGATION -->
 
-        <a href="#home">Home</a>
-        <a href="#menu">Menu</a>
-        <a href="#about">About</a>
-    </nav>
+    <header>
+
+        <nav>
+
+            <a href="#" class="logo">
+                NOIR<span>.</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#story">Our Story</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <a href="#contact" class="reserve">
+                Reserve a Table
+            </a>
+
+        </nav>
+
+    </header>
 
 
-    <!-- Home -->
-    <section id="home" class="home">
+    <!-- HERO -->
 
-        <div>
-            <h1>Welcome to Tasty Bites</h1>
+    <section id="home" class="hero">
 
-            <p>
-                Delicious food made fresh just for you.
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                EST. 2026 · NAIROBI
             </p>
 
-            <button>Order Now</button>
-        </div>
+            <h1>
+                Taste the
+                <span>extraordinary.</span>
+            </h1>
 
-        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80"
-             alt="Pizza">
+            <p class="hero-description">
+                An unforgettable dining experience where bold flavours,
+                beautiful ingredients and modern cuisine meet.
+            </p>
 
-    </section>
+            <div class="hero-buttons">
 
+                <a href="#menu" class="main-button">
+                    Explore Menu →
+                </a>
 
-    <!-- Menu -->
-    <section id="menu">
+                <a href="#story" class="text-button">
+                    Our Story
+                </a>
 
-        <h2>Our Menu</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=80">
-
-                <h3>Classic Burger</h3>
-
-                <p>Juicy beef burger with fresh vegetables.</p>
-
-                <strong>KSh 500</strong>
-            </div>
-
-
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=500&q=80">
-
-                <h3>Chicken Pasta</h3>
-
-                <p>Creamy pasta with delicious grilled chicken.</p>
-
-                <strong>KSh 650</strong>
-            </div>
-
-
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=500&q=80">
-
-                <h3>Sweet Dessert</h3>
-
-                <p>A delicious dessert to finish your meal.</p>
-
-                <strong>KSh 300</strong>
             </div>
 
         </div>
 
+
+        <div class="hero-food">
+
+            <div class="circle"></div>
+
+            <img
+                src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=90"
+                alt="Premium steak">
+
+            <div class="floating-card">
+
+                <span>★ 4.9</span>
+
+                <p>
+                    Loved by<br>
+                    2,000+ guests
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="scroll">
+            SCROLL ↓
+        </div>
+
     </section>
 
 
-    <!-- About -->
-    <section id="about" class="about">
 
-        <h2>About Us</h2>
+    <!-- FEATURES -->
 
-        <p>
-            Tasty Bites is a friendly food restaurant serving
-            fresh and delicious meals at affordable prices.
-        </p>
+    <section class="features">
+
+        <div>
+            <span>01</span>
+            <h3>Fresh Ingredients</h3>
+            <p>Only the finest ingredients make it to your plate.</p>
+        </div>
+
+        <div>
+            <span>02</span>
+            <h3>Master Chefs</h3>
+            <p>Passion and creativity behind every dish.</p>
+        </div>
+
+        <div>
+            <span>03</span>
+            <h3>Unique Experience</h3>
+            <p>Dining designed to create unforgettable memories.</p>
+        </div>
 
     </section>
 
 
-    <!-- Footer -->
+
+    <!-- MENU -->
+
+    <section id="menu" class="menu">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">DISCOVER</p>
+
+            <h2>
+                Our signature
+                <span>dishes.</span>
+            </h2>
+
+            <p>
+                Crafted with passion. Served with style.
+            </p>
+
+        </div>
+
+
+        <div class="categories">
+
+            <button onclick="showCategory('all')" class="active">
+                All
+            </button>
+
+            <button onclick="showCategory('mains')">
+                Mains
+            </button>
+
+            <button onclick="showCategory('pizza')">
+                Pizza
+            </button>
+
+            <button onclick="showCategory('dessert')">
+                Dessert
+            </button>
+
+        </div>
+
+
+        <div class="food-grid">
+
+
+            <!-- FOOD 1 -->
+
+            <div class="food-card mains">
+
+                <div class="food-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=85"
+                        alt="Steak">
+
+                    <span class="price">
+                        KSh 1,850
+                    </span>
+
+                </div>
+
+                <div class="food-info">
+
+                    <p>CHEF'S SPECIAL</p>
+
+                    <h3>Midnight Steak</h3>
+
+                    <span>
+                        Grilled beef · Herb butter · Vegetables
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FOOD 2 -->
+
+            <div class="food-card pizza">
+
+                <div class="food-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&q=85"
+                        alt="Pizza">
+
+                    <span class="price">
+                        KSh 1,200
+                    </span>
+
+                </div>
+
+                <div class="food-info">
+
+                    <p>FAVOURITE</p>
+
+                    <h3>Truffle Pizza</h3>
+
+                    <span>
+                        Mozzarella · Truffle · Fresh basil
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FOOD 3 -->
+
+            <div class="food-card mains">
+
+                <div class="food-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=85"
+                        alt="Pasta">
+
+                    <span class="price">
+                        KSh 1,050
+                    </span>
+
+                </div>
+
+                <div class="food-info">
+
+                    <p>CLASSIC</p>
+
+                    <h3>Velvet Pasta</h3>
+
+                    <span>
+                        Cream sauce · Parmesan · Herbs
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FOOD 4 -->
+
+            <div class="food-card dessert">
+
+                <div class="food-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=85"
+                        alt="Dessert">
+
+                    <span class="price">
+                        KSh 750
+                    </span>
+
+                </div>
+
+                <div class="food-info">
+
+                    <p>SWEET FINISH</p>
+
+                    <h3>Velvet Cake</h3>
+
+                    <span>
+                        Chocolate · Cream · Fresh berries
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- STORY -->
+
+    <section id="story" class="story">
+
+        <div class="story-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1000&q=85"
+                alt="Restaurant">
+
+        </div>
+
+
+        <div class="story-content">
+
+            <p class="eyebrow">
+                OUR STORY
+            </p>
+
+            <h2>
+                Food is an art.
+                <span>We make it unforgettable.</span>
+            </h2>
+
+            <p>
+                NOIR was created for people who believe that dinner
+                should be more than just eating.
+            </p>
+
+            <p>
+                From our carefully selected ingredients to the final
+                plate, every detail is designed to create a moment
+                worth remembering.
+            </p>
+
+            <a href="#contact" class="main-button">
+                Visit NOIR →
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CTA -->
+
+    <section id="contact" class="cta">
+
+        <div>
+
+            <p class="eyebrow">
+                YOUR TABLE AWAITS
+            </p>
+
+            <h2>
+                Make tonight
+                <span>special.</span>
+            </h2>
+
+            <p>
+                Join us for an unforgettable evening.
+            </p>
+
+            <a href="tel:+254700000000" class="main-button">
+                Reserve Your Table
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
     <footer>
-        <p>© 2026 Tasty Bites, Nairobi, Kenya</p>
-    </footer>
 
-</body>
-</html>
+        <div>
+
+            <h2 class="logo">
+                NOIR<span>.</span>
+            </h2>
+
+            <p>
+                Modern dining. Unforgettable moments.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4>VISIT US</h4>
+
+            <p>
+                Nairobi, Kenya<br>
+                Mon — Sun · 11:00 — 23
